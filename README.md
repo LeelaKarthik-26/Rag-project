@@ -2,7 +2,7 @@
 
 Build a minimal, testable RAG API that answers questions from a local knowledge base using ChromaDB retrieval and an Ollama model.
 
-![RAG Architecture](assests/basic k8s Arctecture.png)
+![RAG Architecture](assets/basic_k8s_Arctecture.png)
 
 ---
 
@@ -17,7 +17,7 @@ Build a minimal, testable RAG API that answers questions from a local knowledge 
 ## Architecture at a glance
 Request flow: FastAPI service -> ChromaDB retrieval -> Ollama generation -> response.
 
-![CI/CD Pipeline](assests/Github actions CI&CD pipeline Architecture.jpeg)
+![CI/CD Pipeline](assets/Github_actions_CI&CD_pipeline_Architecture.jpeg)
 
 ---
 
