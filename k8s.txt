@@ -1,1 +1,3 @@
 Kubernetes is a container orchestration platform used to manage containers at scale.
+It automates deployment, scaling, and self-healing of containerized applications.
+It also provides service discovery, load balancing, and rolling updates for microservices architectures.
