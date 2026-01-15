@@ -2,7 +2,7 @@
 
 Build a minimal, testable RAG API that answers questions from a local knowledge base using ChromaDB retrieval and an Ollama model.
 
-![RAG Architecture](docs/images/rag-architecture.png)
+![RAG Architecture](assests/basic k8s Arctecture.png)
 
 ---
 
@@ -17,7 +17,7 @@ Build a minimal, testable RAG API that answers questions from a local knowledge 
 ## Architecture at a glance
 Request flow: FastAPI service -> ChromaDB retrieval -> Ollama generation -> response.
 
-![CI/CD Pipeline](docs/images/ci-cd-pipeline.jpg)
+![CI/CD Pipeline](assests/Github actions CI&CD pipeline Architecture.jpeg)
 
 ---
 
@@ -79,21 +79,18 @@ GitHub Actions rebuilds embeddings, starts the API in mock mode, and runs semant
 ## Project structure
 ```text
 .
-├─ app.py              FastAPI RAG endpoint
-├─ embed.py            Embeds `k8s.txt` into ChromaDB
-├─ docs/k8s.txt        Sample knowledge base content
-├─ semantic_test.py    Semantic regression tests
-├─ deployment.yaml     Kubernetes deployment
-├─ service.yaml        Kubernetes service
-├─ Dockerfile          Container build
-└─ .github/workflows   CI pipeline
+|- app.py              FastAPI RAG endpoint
+|- embed.py            Embeds `k8s.txt` into ChromaDB
+|- docs/k8s.txt        Sample knowledge base content
+|- semantic_test.py    Semantic regression tests
+|- deployment.yaml     Kubernetes deployment
+|- service.yaml        Kubernetes service
+|- Dockerfile          Container build
+`- .github/workflows   CI pipeline
 ```
 
 ---
 
 ## Notes
 - The embed script expects `k8s.txt` in the repo root. A sample lives at `docs/k8s.txt`.
-- Place the provided diagrams at:
-  - `docs/images/rag-architecture.png`
-  - `docs/images/ci-cd-pipeline.jpg`
-
+- Diagrams live in `assests/` and are embedded above.
